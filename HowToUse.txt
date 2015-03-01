@@ -1,0 +1,12 @@
+create_csv.py :
+Créé un fichier avec le chemin des images. Mettre en paramètre le chemin absolu vers le dossier où se trouve les images
+
+ObjectMarker.py : 
+Avec la position des yeux, redimensionne et tronque les images. 
+Mettre en paramètre le chemin absolu du dossier contenant uniquement les images à dimensionner. 
+
+facerec_LBP.py :
+Reconnnaissance faciale avec la méthode LBP d'openCV. Mettre en paramètre le chemin absolu vers le fichier csv.
+
+suivi_facial.py :
+Detecte un visage et permet à une caméra montée sur un servo-moteur de suivre du regard ce visage.
