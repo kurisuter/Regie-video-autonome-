@@ -38,11 +38,11 @@ def init():
     move(6,90)
 
 init()
-cascPath ="C:\Users\Christelle\Downloads\opencv\sources\data\haarcascades\haarcascade_frontalface_alt.xml"
+cascPath ="haarcascade_frontalface_alt.xml"
 faceCascade = cv2.CascadeClassifier(cascPath)
 print faceCascade.empty()
 cascade = faceCascade
-nested = cv2.CascadeClassifier("C:\Users\Christelle\Downloads\opencv\sources\data\haarcascades\haarcascade_mcs_eyepair_big.xml")
+nested = cv2.CascadeClassifier("haarcascade_eye")
 print nested.empty()
 video_capture = cv2.VideoCapture(1)
 angx = 90
