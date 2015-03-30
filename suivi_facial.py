@@ -81,7 +81,7 @@ while True:
     recad = vis
     # Draw a rectangle around the faces
     for x1, y1, x2, y2 in rects:
-        cv2.rectangle(vis, (x1, y1), (x2, y2), (0, 255, 0), 2)
+        cv2.rectangle(vis, (x1, y1), (x2, y2), (0, 255, 0), 5)
     for x1, y1, x2, y2 in rects:
             center(frame,x1,x2,y1,y2)
             roi = gray[y1:y2, x1:x2]
