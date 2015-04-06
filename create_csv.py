@@ -30,7 +30,7 @@ if __name__ == "__main__":
      #   print "usage: create_csv <base_path>"
       #  sys.exit(1)
 
-    BASE_PATH=sys.argv[1]#"D:\documents\Polytech_2014-2015\Semestre_8\Projet\Att_faces"
+    BASE_PATH="D:\documents\Polytech_2014-2015\Semestre_8\Regie-video-autonome-\Att_faces"#sys.argv[1]#"D:\documents\Polytech_2014-2015\Semestre_8\Projet\Att_faces"
     SEPARATOR=";"
     output = open("at.csv", 'w')
     label = 0
