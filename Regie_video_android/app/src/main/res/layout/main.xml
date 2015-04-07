@@ -1,60 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/ll1"
     android:orientation="vertical" >
 
-    <LinearLayout
+    <!--<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
-
+-->
+    <View android:id="@+id/strut"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"/>
         <Button
             android:id="@+id/selectPicture"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_alignRight="@id/strut"
+            android:layout_alignParentLeft="true"
+
+
             android:text="Select picture" />
 
         <Button
             android:id="@+id/takePicture"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+
+            android:layout_alignLeft="@id/strut"
+            android:layout_alignParentRight="true"
+
             android:text="Take Picture" />
 
-    </LinearLayout>
 
-    <LinearLayout
+
+    <!--<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical" >
-
+-->
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
+            android:layout_centerVertical = "true"
             android:contentDescription="TODO"
             android:src="@drawable/ic_launcher"
             />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
         <EditText android:id="@+id/edit_message"
-            android:layout_weight="1"
+
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/button_send"
             android:hint="Input user name"/>
         <Button android:id="@+id/button_send"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
             android:text="Send to Robot"
             android:onClick="sendMessage" />
 
-    </LinearLayout>
-</LinearLayout>
+</RelativeLayout>
